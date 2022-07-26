@@ -14,6 +14,8 @@ brew "watchman"
 brew "wireguard-tools"
 brew "yarn"
 brew "youtube-dl"
+cask "iterm2"
+cask "firefox"
 mas "1Password 7", id: 1333542190
 mas "Remote Desktop", id: 409907375
 mas "Spark", id: 1176895641
