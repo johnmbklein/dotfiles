@@ -211,32 +211,29 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	Privileges -bool true
 
 ###############################################################################
-# Login Items                                                                 #
+# Login                                                                       #
 ###############################################################################
 
+# Login Items
 # Amphetamine
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Amphetamine.app", hidden:false}'
-
 # iTerm
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/iTerm.app", hidden:false}'
-
 # Quicksilver
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Quicksilver.app", hidden:false}'
-
 # Signal
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Signal.app", hidden:false}'
-
 # Spark
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Spark.app", hidden:false}'
-
 # Calendar
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/System/Applications/Calendar.app", hidden:false}'
-
 # Messages
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/System/Applications/Messages.app", hidden:false}'
-
 # Things
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Things3.app", hidden:false}'
+
+# Name and password login
+sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWFULLNAME -int 1
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
