@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>14C109</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>Remember The Milk</string>
+	<key>CFBundleExecutable</key>
+	<string>RememberTheMilk</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.binaryminded.QSRememberTheMilk</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Remember The Milk</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.6.0</string>
+	<key>CFBundleVersion</key>
+	<string>103</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>6A2008a</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>14A382</string>
+	<key>DTSDKName</key>
+	<string>macosx10.10</string>
+	<key>DTXcode</key>
+	<string>0611</string>
+	<key>DTXcodeBuild</key>
+	<string>6A2008a</string>
+	<key>QSActions</key>
+	<dict>
+		<key>RTMAddTaskAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>RememberTheMilkAction</string>
+			<key>actionSelector</key>
+			<string>newTaskWithText:inList:</string>
+			<key>directTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>icon</key>
+			<string>Cow</string>
+			<key>indirectOptional</key>
+			<true/>
+			<key>name</key>
+			<string>Create Task in…</string>
+			<key>reverseAguments</key>
+			<false/>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+		<key>RTMReverseAddTaskAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>RememberTheMilkAction</string>
+			<key>actionSelector</key>
+			<string>newTaskWithText:inList:</string>
+			<key>directTypes</key>
+			<array>
+				<string>RTMListType</string>
+			</array>
+			<key>icon</key>
+			<string>Cow</string>
+			<key>indirectOptional</key>
+			<false/>
+			<key>name</key>
+			<string>Add Task…</string>
+			<key>reverseArguments</key>
+			<true/>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>QSDefaults</key>
+	<dict>
+		<key>QSRTMAuthName</key>
+		<string></string>
+		<key>QSRTMParseTask</key>
+		<true/>
+		<key>QSRTMToken</key>
+		<string></string>
+	</dict>
+	<key>QSObjectSources</key>
+	<dict>
+		<key>RememberTheMilkSource</key>
+		<string>RememberTheMilkSource</string>
+	</dict>
+	<key>QSPlugIn</key>
+	<dict>
+		<key>author</key>
+		<string>Brian Moore</string>
+		<key>categories</key>
+		<array>
+			<string>Web</string>
+			<string>Text</string>
+		</array>
+		<key>description</key>
+		<string>Provides an interface to quickly add Remember the Milk todo items.</string>
+		<key>extendedDescription</key>
+		<string>&lt;h2&gt;Remember The Milk Plugin&lt;/h2&gt;
+&lt;p&gt;The Remember The Milk plugin allows you to easily add tasks to your Remember the Milk account.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Setup&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Before you can add tasks, you must authenticate Quicksilver with your Remember The Milk account. Go to the &lt;a href="qs://preferences#RTMPreferencePane"&gt;Remember the Milk preferences&lt;/a&gt; within Quicksilver to do this.&lt;/p&gt;
+&lt;h3&gt;Actions&lt;/h3&gt;
+&lt;p&gt;There are two actions that are added by this plugin &lt;strong&gt;Create Task in…&lt;/strong&gt; and &lt;strong&gt;Add Task…&lt;/strong&gt;. Both actions perform the same thing: add a task to your RTM account, but the first takes text in Quicksilver's 1st pane and a RTM list in the 3rd pane, whilst the latter takes a RTM list in the 1st pane and text in the 3rd pane (that is - a reverse of the 1st action)&lt;/p&gt;
+&lt;h3&gt;Catalog&lt;/h3&gt;
+&lt;p&gt;By default, the plugin adds your RTM lists to Quicksilver's catalog. You can view the catalog Entries in Preferences → Catalog → Plugins → Remember the Milk Lists&lt;/p&gt;</string>
+		<key>icon</key>
+		<string>Cow</string>
+		<key>qsversion</key>
+		<string>29CC</string>
+		<key>relatedBundles</key>
+		<array/>
+	</dict>
+	<key>QSPresetAdditions</key>
+	<array>
+		<dict>
+			<key>ID</key>
+			<string>QSPresetRememberTheMilk</string>
+			<key>name</key>
+			<string>Remember The Milk Lists</string>
+			<key>source</key>
+			<string>RememberTheMilkSource</string>
+		</dict>
+	</array>
+	<key>QSRegistration</key>
+	<dict>
+		<key>QSActionProviders</key>
+		<dict>
+			<key>RememberTheMilkAction</key>
+			<string>RememberTheMilkAction</string>
+		</dict>
+		<key>QSObjectHandlers</key>
+		<dict>
+			<key>RTMListType</key>
+			<string>RememberTheMilkSource</string>
+		</dict>
+		<key>QSObjectSources</key>
+		<dict>
+			<key>RememberTheMilkSource</key>
+			<string>RememberTheMilkSource</string>
+		</dict>
+		<key>QSPreferencePanes</key>
+		<dict>
+			<key>RTMPreferencePane</key>
+			<dict>
+				<key>class</key>
+				<string>RTMPreferencePane</string>
+				<key>description</key>
+				<string>Preferences</string>
+				<key>icon</key>
+				<string>Cow</string>
+				<key>name</key>
+				<string>Remember The Milk</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>QSRequirements</key>
+	<dict>
+		<key>version</key>
+		<string>4001</string>
+	</dict>
+	<key>QSResourceAdditions</key>
+	<dict>
+		<key>Cow</key>
+		<dict>
+			<key>bundle</key>
+			<string>com.binaryminded.QSRememberTheMilk</string>
+			<key>resource</key>
+			<string>cow.icns</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

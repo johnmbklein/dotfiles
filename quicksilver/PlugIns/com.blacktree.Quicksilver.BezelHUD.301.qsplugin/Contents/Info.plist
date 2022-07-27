@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12C3006</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>BezelHDU</string>
+	<key>CFBundleExecutable</key>
+	<string>BezelHUD</string>
+	<key>CFBundleGetInfoString</key>
+	<string>BezelHUD Interface 1.4.1</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.blacktree.Quicksilver.BezelHUD</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>BezelHUD</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.4.1</string>
+	<key>CFBundleVersion</key>
+	<string>301</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4G2008a</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12C37</string>
+	<key>DTSDKName</key>
+	<string>macosx10.8</string>
+	<key>DTXcode</key>
+	<string>0452</string>
+	<key>DTXcodeBuild</key>
+	<string>4G2008a</string>
+	<key>QSDefaultsTemplate</key>
+	<dict>
+		<key>BezelHUD.blur</key>
+		<true/>
+		<key>BezelHUD.force_center</key>
+		<false/>
+	</dict>
+	<key>QSPlugIn</key>
+	<dict>
+		<key>author</key>
+		<string>Julius Eckert, Ben Cochran</string>
+		<key>categories</key>
+		<array>
+			<string>Interfaces</string>
+		</array>
+		<key>description</key>
+		<string>A dark 'HUD' style interface based on the built in Bezel interface</string>
+		<key>extendedDescription</key>
+		<string></string>
+		<key>icon</key>
+		<string></string>
+		<key>qsversion</key>
+		<string>29CC</string>
+		<key>relatedBundles </key>
+		<array/>
+	</dict>
+	<key>QSRegistration</key>
+	<dict>
+		<key>QSCommandInterfaceControllers</key>
+		<dict>
+			<key>BezelHUD</key>
+			<string>BezelHUD</string>
+		</dict>
+		<key>QSPreferencePanes</key>
+		<dict>
+			<key>BezelHUDPrefPane</key>
+			<dict>
+				<key>class</key>
+				<string>BHPreferencePane</string>
+				<key>description</key>
+				<string>BezelHUD interface preferences</string>
+				<key>icon</key>
+				<string></string>
+				<key>name</key>
+				<string>BezelHUD</string>
+				<key>nibBundle</key>
+				<string>com.blacktree.Quicksilver.BezelHUD</string>
+				<key>nibName</key>
+				<string>BezelHUDPrefPane</string>
+				<key>type</key>
+				<string>hidden</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>QSRequirements</key>
+	<dict>
+		<key>version</key>
+		<string>3936</string>
+	</dict>
+</dict>
+</plist>
