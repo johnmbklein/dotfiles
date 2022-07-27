@@ -1,0 +1,8 @@
+dbaeumer.vscode-eslint
+dsznajder.es7-react-js-snippets
+eamodio.gitlens
+esbenp.prettier-vscode
+foxundermoon.shell-format
+mariomatheu.syntax-project-pbxproj
+ms-vscode.cpptools
+redhat.java
