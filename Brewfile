@@ -18,7 +18,7 @@ cask "iterm2"
 cask "firefox"
 cask "quicksilver"
 cask "signal"
-cask "chrome"
+cask "google-chrome"
 # Temp third-party task for dockutil
 cask "hpedrorodrigues/tools/dockutil"
 mas "1Password 7", id: 1333542190
