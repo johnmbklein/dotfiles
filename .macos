@@ -314,6 +314,19 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm"
 defaults write com.apple.menuextra.clock Show24Hour -int 1
 
+# TODO: migrate these dock configs to dock ansible action
+# Add Applications folder
+dockutil --add /Volumes/Macintosh\ HD/Applications --view list --display folder --sort name
+# Remove default Downloads folder
+dockutil --remove Downloads
+# Add Downloads folder
+dockutil --add /Users/john/Downloads --view list --display fold
+er --sort dateadded
+# Add dev folder
+dockutil --add /Users/john/dev --view list --display folder --sort name
+# Add document folder
+dockutil --add /Users/john/Documents --view list --display folder --sort name
+
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
