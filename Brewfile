@@ -19,7 +19,8 @@ cask "firefox"
 cask "quicksilver"
 cask "signal"
 cask "google-chrome"
-# Temp third-party task for dockutil
+cast "stats"
+# Temp third-party cask for dockutil
 cask "hpedrorodrigues/tools/dockutil"
 mas "1Password 7", id: 1333542190
 mas "Remote Desktop", id: 409907375
