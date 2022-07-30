@@ -93,6 +93,10 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 
+# Trackpad: Disable force touch
+defaults write com.apple.AppleMultitouchTrackpad ActuateDetents -int 0
+defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -int 1
+
 # Disable “natural” (Lion-style) scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
@@ -236,7 +240,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWFULLNAME -int 1
 
 ###############################################################################
-# Dock, Dashboard, and hot corners                                            #
+# Dock, Dashboard, hot corners, control center                                #
 ###############################################################################
 
 # Set the icon size of Dock items
@@ -257,8 +261,15 @@ defaults write com.apple.dock expose-animation-duration -float 0.15
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+# Enable app expose gesture
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+
+# Disable launchpad gesture
+defaults write com.apple.dock showLaunchpadGestureEnabled -bool false
+
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
+
 # Remove the animation when hiding/showing the Dock
 defaults write com.apple.dock autohide-time-modifier -float 0
 
@@ -266,13 +277,10 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 defaults write com.apple.dock autohide -bool true
 
 # Make Dock icons of hidden applications translucent
-# defaults write com.apple.dock showhidden -bool true
+defaults write com.apple.dock showhidden -bool true
 
 # Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
-
-# Enable the 'reduce transparency' option. Save GPU cycles.
-defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Hot corners
 # Possible values:
@@ -298,6 +306,13 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Top left screen corner → 
 defaults write com.apple.dock wvous-tl-corner -int 1
 defaults write com.apple.dock wvous-tl-modifier -int 0
+
+# Show bluetooth in menubar
+defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -int 1
+
+# 24 hour clock
+defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm"
+defaults write com.apple.menuextra.clock Show24Hour -int 1
 
 ###############################################################################
 # Safari & WebKit                                                             #
@@ -362,6 +377,9 @@ if [[ "$RUN_AS_ROOT" = true ]]; then
   # Restart spotlight
   killall mds > /dev/null 2>&1
 fi
+
+# Remove spotlight from menubar
+defaults delete com.apple.Spotlight "NSStatusItem Visible Item-0"
 
 ###############################################################################
 # Terminal & iTerm 2                                                          #
