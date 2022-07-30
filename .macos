@@ -308,7 +308,7 @@ defaults write com.apple.dock wvous-tl-corner -int 1
 defaults write com.apple.dock wvous-tl-modifier -int 0
 
 # Show bluetooth in menubar
-defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -int 1
+# defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -int 1
 
 # 24 hour clock
 defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm"
