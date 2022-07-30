@@ -27,4 +27,5 @@ mas "Spark", id: 1176895641
 mas "Slack", id: 803453959
 mas "Things", id: 904280696
 mas "Amphetamine", id: 937984704
+mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
