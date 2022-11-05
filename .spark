@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Disable spelling autocorrect
+defaults write com.readdle.smartemail-Mac WebAutomaticSpellingCorrectionEnabled -bool false
