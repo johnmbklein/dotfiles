@@ -22,6 +22,7 @@ cask "signal"
 cask "google-chrome"
 cask "stats"
 cask "steam"
+cask "vlc"
 # Temp third-party cask for dockutil
 cask "hpedrorodrigues/tools/dockutil"
 mas "1Password 7", id: 1333542190
