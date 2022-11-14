@@ -21,6 +21,7 @@ cask "quicksilver"
 cask "signal"
 cask "google-chrome"
 cask "stats"
+cask "appcleaner"
 cask "steam"
 cask "vlc"
 # Temp third-party cask for dockutil
