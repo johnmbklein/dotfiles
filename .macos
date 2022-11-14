@@ -321,12 +321,12 @@ dockutil --add /Volumes/Macintosh\ HD/Applications --view list --display folder 
 # Remove default Downloads folder
 dockutil --remove Downloads
 # Add Downloads folder
-dockutil --add /Users/john/Downloads --view list --display fold
+dockutil --add ~/Downloads --view list --display fold
 er --sort dateadded
 # Add dev folder
-dockutil --add /Users/john/dev --view list --display folder --sort name
+dockutil --add ~/dev --view list --display folder --sort name
 # Add document folder
-dockutil --add /Users/john/Documents --view list --display folder --sort name
+dockutil --add ~/Documents --view list --display folder --sort name
 
 ###############################################################################
 # Safari & WebKit                                                             #
